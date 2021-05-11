@@ -68,12 +68,12 @@ int main()
     case 1 : 
     ch=ch;
      int n;
-     n=1000;
-    while(n<=20000){
+     n=5000;
+    while(n<=70000){
     int arr[n];
     srand(time(0));
     for(int i=0;i<n;i++){
-        arr[i]=random(1,20000);
+        arr[i]=random(1,70000);
     }
     printf("ENTER THE ELEMENT TO BE SEARCHED\n");
     scanf("%d",&key);
@@ -86,18 +86,18 @@ int main()
      cpu_time_used1=(double)(end1-start1) / CLOCKS_PER_SEC;
         (result == -1) ? printf("Element is not present in array of %d numbers and the cpu time used is %f\n",n,cpu_time_used1):
           printf("Element is present at index %d in array of %d numbers and cpu time used is %f\n",result,n,cpu_time_used1);
-         n=n+2000;
+         n=n+5000;
     }
         break;
     case 2 : 
       ch=ch;
      int j;
-     j=1000;
-    while(j<=20000){
+     j=5000;
+    while(j<=70000){
     int arr[j];
     srand(time(0));
     for(int i=0;i<j;i++){
-        arr[i]=random(1,20000);
+        arr[i]=random(1,70000);
     }
     selectionsort(j,arr);
     printf("ENTER THE ELEMENT TO BE SEARCHED\n");
@@ -111,7 +111,7 @@ int main()
      cpu_time_used2=(double)(end2-start2) / CLOCKS_PER_SEC;
         (result == -1) ? printf("Element is not present in array of %d numbers and the cpu time used is %f\n",j,cpu_time_used2):
           printf("Element is present at index %d in array of %d numbers and cpu time used is %f\n",result,j,cpu_time_used2);
-         j=j+2000;      
+         j=j+5000;      
 }
         break;
  return 0;
