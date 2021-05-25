@@ -34,8 +34,10 @@ void main(){
     for(i=1;i<=n;i++){
         visited[i]=0;
     }
-    printf("ENTER THE STARTING NODE FOR THE GRAPH\n");
-    scanf("%d",&starting);
-    printf("NODES REACHABLE FROM NODE %d :",starting);
-        bfs(starting,n,adj,visited);
+    printf("BFS TRAVERSAL:  ");
+    for(i=1;i<=n;i++){
+  if(visited[i]==0){
+        bfs(i,n,adj,visited);
+    }
+}
 }
